@@ -47,7 +47,7 @@ var BuyButton = React.memo(({post, images}) => {
         data-item-description={post.description}
         data-item-custom1-name={post.customFields.name}
         data-item-custom1-value={selected}
-        data-item-url={"https://snipcart-react-gatsby.netlify.com/" + post.path}>
+        data-item-url={"https://snipcart-sample.netlify.com/" + post.path}>
         Buy for PHP{post.price}
     </a>
     </div>
