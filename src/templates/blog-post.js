@@ -30,15 +30,18 @@ class BlogPostTemplate extends React.Component {
             rel:"stylesheet",
             type:"text/css" 
           }]}
-          script={[{ 
-            type: 'text/javascript',
-            id: "snipcart",
-            "data-api-key": "MDU1NzQyMWItMzkzYS00OTgwLWE3NTEtOTI1YWNhY2JmMDYxNjM3MDMwODQ4Nzk4OTY1NDI0",
-            src:"https://cdn.snipcart.com/scripts/2.0/snipcart.js" 
-          },{
-            type: 'text/javascript',
-            src:"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"
-          }]}/>
+          script={[
+            {
+              type: 'text/javascript',
+              src:"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"
+            },
+            { 
+              type: 'text/javascript',
+              id: "snipcart",
+              "data-api-key": "MDU1NzQyMWItMzkzYS00OTgwLWE3NTEtOTI1YWNhY2JmMDYxNjM3MDMwODQ4Nzk4OTY1NDI0",
+              src:"https://cdn.snipcart.com/scripts/2.0/snipcart.js" 
+            }
+          ]}/>
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
